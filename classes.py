@@ -16,6 +16,7 @@ class User:
 class student(User):
     base_gpa = 3.5
     grade = '11th Grade'
+    pin = 3849
 
     def getlogininfo(self):
         student_name = input("Enter your name: ")
