@@ -29,9 +29,20 @@ class student(User):
 class student_info(User):
     address = '4848 leaf st'
     phone = '503-498-4827'
+
+    def getlogininfo(self):
+        student_address = input("Enter your address: ")
+        student_phone = input("Enter your phone number: ")
+        if (student_address == self.address and student_phone == self.phone):
+            print("You can now proceed")
+        else:
+            print("Wrong address or phone number")
     
 schoolwebsite = User()
 schoolwebsite.getlogininfo()
 
 onlineclass = student()
 onlineclass.getlogininfo()
+
+studentinfo = student_info()
+studentinfo.getlogininfo()
