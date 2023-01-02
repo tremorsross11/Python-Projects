@@ -9,13 +9,13 @@ print(obj._protectedVar)
 
 class privated:
     def __init__(self):
-        self._privateVar = 12
+        self.__privateVar = 12
 
     def getPrivate(self):
-        print(self._privateVar)
+        print(self.__privateVar)
 
     def setPrivate(self, private):
-        self._privateVar = private
+        self.__privateVar = private
 
 obj = privated()
 obj.getPrivate()
